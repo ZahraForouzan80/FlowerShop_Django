@@ -93,7 +93,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: url(../font/Vazirmatn-Medium.ttf);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -117,6 +117,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  font-family:url(../font/Vazirmatn-Bold.ttf);
 }
 
 h1, .h1 {
@@ -166,6 +167,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family:url(../font/Vazirmatn-Medium.ttf) ;
 }
 
 abbr[title] {
@@ -10848,4 +10850,64 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 15rem;
+}
+.product-card{
+
+  transition:.35s;
+
+  border-radius:20px;
+
+  overflow:hidden;
+  
+
+}
+
+.product-card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:20px 20px 45px rgba(0,0,0,.25);
+
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+
+  width:5%;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+
+  background-size:55%;
+
+}
+
+.carousel{
+
+  padding:20px 40px;
+
+}
+.team-text{
+  text-align: justify;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.contact-section{
+  position:relative;
+  background-color:#f8f9fa;
+  overflow:hidden;
+}
+
+.contact-section::before{
+  content:"";
+  position:fixed;
+
+  width:20%;
+  height:100%;
+  
+background-image: url("../images/pngleaf.parspng.com-6.png");
+
+  opacity:.08;
 }

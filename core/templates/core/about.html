@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>فروشگاه گل و گیاه فروزان</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #084a2b;">
+                <div class="container px-5">
+                    <a class="navbar-brand fw-bold" href="{% url 'home' %}">گل و گیاه فروزان</a>
+                    <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">خانه </a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'plants' %}"> محصولات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">ثبت نام/ورود</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'about_us' %}">درباره ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="hero-section py-5 contact-section">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+                                <h1 class="fw-bolder mb-3">درباره گل و گیاه فروزان</h1>
+                                <p class="lead fw-normal text-muted mb-4">
+                                    با عشق به طبیعت، تلاش می‌کنیم
+                                    زیباترین گل‌ها و گیاهان را با بهترین کیفیت
+                                    به خانه شما برسانیم.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About section one-->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'images/images (4).jfif' %}" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">معرفی فروشگاه</h2>
+                            <p class="lead fw-normal text-muted mb-0">فروشگاه گل و گیاه فروزان با هدف ترویج فرهنگ نگهداری از گیاهان و ایجاد فضایی سرسبز در خانه‌ها فعالیت خود را آغاز کرده است. ما با ارائه گیاهان سالم، گلدان‌های زیبا و مشاوره تخصصی، تجربه‌ای مطمئن از خرید آنلاین را برای مشتریان فراهم می‌کنیم.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section two-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'images/images (2).jfif' %}" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">ماموریت ما</h2>
+                            <p class="lead fw-normal text-muted mb-0">فراهم کردن دسترسی آسان به گل‌ها و گیاهان سالم، باکیفیت و متنوع برای تمامی علاقه‌مندان به طبیعت.</p>
+                            <br>
+                            <h2 class="fw-bolder">چشم‌انداز ما</h2>
+                            <p class="lead fw-normal text-muted mb-0">تبدیل شدن به یکی از معتبرترین فروشگاه‌های آنلاین گل و گیاه از طریق ارائه محصولات باکیفیت، خدمات حرفه‌ای و جلب رضایت مشتریان.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Team members section-->
+            <section class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">تیم متخصص ما</h2>
+                        <p class="lead fw-normal text-muted mb-5">تیمی از متخصصان و علاقه‌مندان به گل و گیاه که با تعهد، کیفیت و خلاقیت، تجربه‌ای متفاوت از خرید آنلاین گل را برای شما رقم می‌زنند</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center ">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="{% static 'images/images (8).jfif' %}" alt="..." />
+                                <h5 class="fw-bolder">زهرا فروزان</h5>
+                                <div class="fst-italic">مدیر فروشگاه</div>
+                                <br>
+                                <p class="fst-italic text-muted team-text">مدیر و بنیان‌گذار فروشگاه گل و گیاه فروزان. با علاقه به طبیعت و تجربه در انتخاب و نگهداری گیاهان، همواره در تلاش است بهترین محصولات را به مشتریان ارائه دهد.</p>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="{% static 'images/images (6).jfif' %}" alt="..." />
+                                <h5 class="fw-bolder">محمد رضایی</h5>
+                                <div class="fst-italic ">کارشناس گیاهان</div>
+                                <br>
+                                <p class="fst-italic text-muted team-text">متخصص انتخاب، نگهداری و سلامت گیاهان آپارتمانی و فضای سبز. آماده ارائه مشاوره برای انتخاب گیاه مناسب هر محیط.</p>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="{% static 'images/images (7).jfif' %}" alt="..." />
+                                <h5 class="fw-bolder">سارا احمدی</h5>
+                                <div class="fst-italic">پشتیبانی مشتریان</div>
+                                <br>
+                                <p class="fst-italic text-muted team-text">پاسخگویی به سوالات مشتریان، پیگیری سفارش‌ها و ارائه راهنمایی‌های لازم برای ایجاد تجربه‌ای رضایت‌بخش از خرید.</p>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="{% static 'images/images (5).jfif' %}" alt="..." />
+                                <h5 class="fw-bolder">امیرحسین محمدی</h5>
+                                <div class="fst-italic">مدیر تأمین و کنترل کیفیت</div>
+                                <br>
+                                <p class="fst-italic text-muted team-text">مسئول انتخاب گیاهان سالم، بررسی کیفیت محصولات و نظارت بر آماده‌سازی سفارش‌ها پیش از ارسال.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- معرفی فروشگاه -->
+            <div class="col-lg-4 mb-4">
+                <h4 class="fw-bold mb-3">
+                    گل و گیاه فروزان
+                </h4>
+                <p class="text-white-50">
+                    ارائه‌دهنده انواع گل و گیاه آپارتمانی، کاکتوس، ساکولنت،
+                    گلدان‌های تزئینی و تجهیزات نگهداری گیاه با بهترین کیفیت.
+                </p>
+            </div>
+            <!-- دسترسی سریع -->
+            <div class="col-lg-4 mb-4">
+
+                <h5 class="fw-bold mb-3">دسترسی سریع</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="{% url 'home' %}" class="text-white-50 text-decoration-none">صفحه اصلی</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="{% url 'plants' %}" class="text-white-50 text-decoration-none">محصولات</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="{% url 'about_us' %}" class="text-white-50 text-decoration-none">درباره ما</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact_us' %}" class="text-white-50 text-decoration-none">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- اطلاعات تماس -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3">
+                    اطلاعات تماس
+                </h5>
+                <p class="text-white-50 mb-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    09123456789
+                </p>
+                <p class="text-white-50 mb-2">
+                    <i class="bi bi-envelope-fill"></i>
+                    info@forouzanplant.ir
+                </p>
+
+                <p class="text-white-50">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    تهران، ایران
+                </p>
+            </div>
+        </div>
+
+        <hr class="border-secondary">
+        <div class="text-center">
+            <p class="mb-1 text-white-50">
+                © 2026 تمامی حقوق این وب‌سایت متعلق به
+                <strong class="text-white">
+                    گل و گیاه فروزان
+                </strong>
+                است.
+            </p>
+            <small class="text-secondary">
+                هرگونه کپی‌برداری از محتوا و تصاویر بدون اجازه کتبی پیگرد قانونی دارد.
+            </small>
+        </div>
+    </div>
+</footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        </body>
+</html>

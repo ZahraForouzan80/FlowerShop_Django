@@ -17,94 +17,186 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #084a2b;">
                 <div class="container px-5">
-            
-                    <a class="navbar-brand fw-bold" href="{% url 'home' %}">
-                         گل و گیاه فروزان
-                    </a>
-            
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent">
-            
+                    <a class="navbar-brand fw-bold" href="{% url 'home' %}">گل و گیاه فروزان</a>
+                    <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent">
                         <span class="navbar-toggler-icon"></span>
-            
                     </button>
-            
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
-            
-                            <li class="nav-item">
-                                <a class="nav-link active"
-                                    href="{% url 'home' %}">
-                                    خانه
-                                </a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="{% url 'plants' %}">
-                                    محصولات
-                                </a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#">
-                                    درباره ما
-                                </a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#">
-                                    تماس با ما
-                                </a>
-                            </li>
-            
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">خانه </a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'plants' %}"> محصولات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">ثبت نام/ورود</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about_us' %}">درباره ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}">تماس با ما</a></li>
                         </ul>
-            
                     </div>
-            
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class="hero-section py-5 contact-section" style="background-color: #6FAF7A;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-end">
-                                <h1 class="display-5 fw-bolder text-white mb-2">طبیعت را به خانه خود بیاورید</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">با مجموعه‌ای از زیباترین گل‌ها و گیاهان آپارتمانی، فضای خانه و محل کار خود را سرشار از طراوت، آرامش و زیبایی کنید. تمامی محصولات با کیفیت بالا و بسته‌بندی ایمن برای شما ارسال می‌شوند.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'plants' %}">مشاهده محصولات</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">خرید آنلاین</a>
+                            <div class="my-5 text-center ">
+                                <h1 class="display-5 fw-bolder text-dark mb-2">طبیعت را به خانه خود بیاورید</h1>
+                                <p class="lead fw-normal mb-4" style="color: rgba(0, 0, 0, 0.85);">با مجموعه‌ای از زیباترین گل‌ها و گیاهان آپارتمانی، فضای خانه و محل کار خود را سرشار از طراوت، آرامش و زیبایی کنید. تمامی محصولات با کیفیت بالا و بسته‌بندی ایمن برای شما ارسال می‌شوند.</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content">
+                                    <a class="btn btn-success rounded-pill px-5 py-3 shadow"  href="{% url 'plants' %}">مشاهده محصولات</a>
+                                    <a class="btn btn-light rounded-pill px-5 py-3 shadow" href="{% url 'login' %}"> خرید آنلاین</a>
                                 </div>
-                                <div class="row mt-5 text-white text-end">
+                                <div class="row mt-5 g-3">
+
                                     <div class="col-4">
-                                        <h3 class="fw-bold">+500</h3>
-                                        <small>محصول</small>
+                                    <div class="bg-white bg-opacity-10 rounded-4 p-3 text-center" style="box-shadow: 0 20px 40px rgba(0,0,0,.35);">
+                                    <h3 class="fw-bold text-white">500+</h3>
+                                    <p class="text-white mb-0">محصول</p>
                                     </div>
+                                    </div>
+                                    
                                     <div class="col-4">
-                                        <h3 class="fw-bold">+1200</h3>
-                                        <small>مشتری</small>
+                                    <div class="bg-white bg-opacity-10 rounded-4 p-3 text-center" style="box-shadow: 0 20px 40px rgba(0,0,0,.35);">
+                                    <h3 class="fw-bold text-white">1200+</h3>
+                                    <p class="text-white mb-0">مشتری</p>
                                     </div>
+                                    </div>
+                                    
                                     <div class="col-4">
-                                        <h3 class="fw-bold">+5</h3>
-                                        <small>سال تجربه</small>
+                                    <div class="bg-white bg-opacity-10 rounded-4 p-3 text-center" style="box-shadow: 0 20px 40px rgba(0,0,0,.35);">
+                                    <h3 class="fw-bold text-white">5+</h3>
+                                    <p class="text-white mb-0">سال تجربه</p>
                                     </div>
-                                </div>
+                                    </div>
+                                    
+                                    </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{% static 'images/bdbbb94aZTp3ZWJwfGY6MjQ4NjY2NC53ZWJwfGZ1aToyMzgxNDYxfGw6ZmF8djox.jpg' %}" alt="..." /></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" style="box-shadow: 0 30px 50px rgba(0,0,0,.35);" src="{% static 'images/bdbbb94aZTp3ZWJwfGY6MjQ4NjY2NC53ZWJwfGZ1aToyMzgxNDYxfGw6ZmF8djox.jpg' %}" alt="..." /></div>
                     </div>
                 </div>
             </header>
             <!-- Features section-->
-            <!-- معرفی فروشگاه -->
+
+<!-- محصولات ویژه -->
+<section class="py-5">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">محصولات ویژه</h2>
+            <p class="lead text-muted">
+                جدیدترین گل‌ها و گیاهان موجود در فروشگاه فروزان
+            </p>
+        </div>
+        <div id="productCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                {% for group in plant_groups %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <div class="row gx-4">
+                        {% for plant in group %}
+                        <div class="col-lg-4">
+
+                            <div class="card h-100 product-card" style="border: 1px solid #2f5d50;">
+
+                                <img
+                                    src="{{ plant.image.url }}"
+                                    class="card-img-top"
+                                    style="height:300px;object-fit:cover;"
+                                    alt="{{ plant.name }}">
+
+                                <div class="card-body">
+
+                                    <span class="badge bg-success rounded-pill mb-2">
+                                        گیاه آپارتمانی
+                                    </span>
+
+                                    <h4 class="fw-bold">
+                                        {{ plant.name }}
+                                    </h4>
+
+                                    <p class="text-muted">
+                                        {{ plant.description|truncatewords:20 }}
+                                    </p>
+
+                                </div>
+
+                                <div class="card-footer bg-white border-0">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <h5 class="text-success fw-bold mb-0">
+                                            {{ plant.price }} تومان
+                                        </h5>
+
+                                        <a href="#" class="btn btn-success rounded-pill">
+                                            مشاهده
+                                        </a>
+                                        <a href="#" class="btn btn-success rounded-pill">
+                                            اضافه کردن به سبد خرید
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon bg-success rounded-circle p-4"></span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon bg-success rounded-circle p-4"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+</section>
+           
+            <!-- Testimonial section-->
+            <div class="py-5" style="background-color:#ffe19f67">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center">
+                                <div class="fs-4 mb-4 fst-italic">هر گیاه، داستانی از زندگی است...
+                                   <br>
+                                    ما تلاش می‌کنیم این داستان را
+                                    به خانه شما بیاوریم.</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="{% static 'images/templatemo_list_icon.gif' %}" alt="..." />
+                                    <div class="fw-bold">
+                                        تیم گل و گیاه فروزان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- معرفی فروشگاه -->
 <section class="py-5 bg-light" id="features">
     <div class="container px-5">
 
@@ -185,87 +277,18 @@
         </div>
     </div>
 </section>
-            <!-- Testimonial section-->
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">هر گیاه، داستانی از زندگی است...
-                                   <br>
-                                    ما تلاش می‌کنیم این داستان را
-                                    به خانه شما بیاوریم.</div>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="{% static 'images/templatemo_list_icon.gif' %}" alt="..." />
-                                    <div class="fw-bold">
-                                        تیم گل و گیاه فروزان
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         <!-- محصولات ویژه -->
-<section class="py-5">
-    <div class="container px-5 my-5">
-
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">محصولات ویژه</h2>
-            <p class="lead text-muted">
-                جدیدترین گل‌ها و گیاهان موجود در فروشگاه فروزان
-            </p>
-        </div>
-        <div class="row gx-5">
-            {% for plant in plants %}
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <!-- عکس محصول -->
-                    <img class="card-img-top"
-                         src="{{ plant.image.url }}"
-                         style="height:300px;object-fit:cover;"
-                         alt="{{ plant.name }}">
-                    <div class="card-body">
-                        <div class="badge bg-success rounded-pill mb-2">
-                            گیاه آپارتمانی
-                        </div>
-                        <h4 class="fw-bold">
-                            {{ plant.name }}
-                        </h4>
-                        <p class="text-muted">{{ plant.description|truncatewords:20 }}</p>
-                    </div>
-                    <div class="card-footer bg-white border-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="text-success fw-bold mb-0">
-                                {{ plant.price }} تومان
-                            </h5>
-                            <a href="#" class="btn btn-success">مشاهده</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% empty %}
-            <div class="col-12 text-center">
-                <h4 class="text-muted">
-                    هنوز محصولی ثبت نشده است.
-                </h4>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 <!-- تماس با ما -->
-<aside class="bg-success bg-gradient rounded-4 shadow p-4 p-sm-5 mt-4">
+<aside class="rounded-4 shadow p-4 p-sm-5 mt-4" style="background-color: #b4e197;">
     <div class="row align-items-center">
         <div class="col-lg-8 mb-4 mb-lg-0">
-            <h2 class="fw-bold text-white mb-3">
+            <h2 class="fw-bold text-black mb-3">
                  با ما در ارتباط باشید
             </h2>
-            <p class="text-white mb-4">
+            <p class="text-black mb-4">
                 اگر درباره محصولات، نحوه نگهداری گیاهان یا ثبت سفارش سؤال دارید،
                 کارشناسان گل و گیاه فروزان همه روزه آماده پاسخگویی به شما هستند.
             </p>
-            <div class="row text-white">
+            <div class="row text-black">
                 <div class="col-md-6 mb-3">
                     <i class="bi bi-telephone-fill me-2"></i>
                     <strong>تلفن:</strong>
@@ -289,9 +312,9 @@
             </div>
         </div>
         <div class="col-lg-4 text-center">
-            <a href="#" class="btn btn-light btn-lg px-5 mb-3">ثبت سفارش</a>
+            <a href="{% url 'login' %}" class="btn btn-light btn-lg px-5 mb-3">ثبت سفارش</a>
             <br>
-            <a href="{% url 'plants' %}" class="btn btn-outline-light px-5">مشاهده محصولات</a>
+            <a href="{% url 'plants' %}" class="btn btn-outline-light px-5" style="color: black;">مشاهده محصولات</a>
         </div>
     </div>
 </aside>
@@ -324,10 +347,10 @@
                         <a href="{% url 'plants' %}" class="text-white-50 text-decoration-none">محصولات</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="text-white-50 text-decoration-none">درباره ما</a>
+                        <a href="{% url 'about_us' %}" class="text-white-50 text-decoration-none">درباره ما</a>
                     </li>
                     <li>
-                        <a href="#" class="text-white-50 text-decoration-none">تماس با ما</a>
+                        <a href="{% url 'contact_us' %}" class="text-white-50 text-decoration-none">تماس با ما</a>
                     </li>
                 </ul>
             </div>
